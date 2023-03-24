@@ -1,0 +1,63 @@
+CLASE 01 - 24/2/2023         Ejercicio 2 - d  (true)
+************************************************************************* input Eclipse
+
+
+package Ejercicios;
+
+public class clase1 {
+
+	public static void main(String[] args) {
+	
+		// Resolución de Ejercicio - Clase: 01, Ítem 2d;
+		
+		// Ingreso de datos de sueldos y cantidad de vehículos;
+		float ingresos = 290000;
+		int cantVehiculos = 4;
+		
+		// Ingreso de datos de vehículos;
+		int añoActual = 2023;
+		int añoV1 = 2022;
+		int añoV2 = 2021;
+		int añoV3 = 2020;
+		int añoV4 = 2017;
+		
+		// Otros datos de bienes a completar;
+		int cantInmuebles = 2;
+		boolean embarcacion = false;
+		boolean aeronave = false;
+		boolean activoSocietario = false;
+		
+		// Verificación de cumplimiento de cantidad de vehículos por antiguedad;
+		int contadorVehiculos = 0;
+				
+			if (añoActual - añoV1 <= 5) {
+				contadorVehiculos = contadorVehiculos + 1;
+			}
+			if (añoActual - añoV2 <= 5) {
+				contadorVehiculos = contadorVehiculos + 1;
+			}
+			if (añoActual - añoV3 <= 5) {
+				contadorVehiculos = contadorVehiculos + 1;
+			}
+			if (añoActual - añoV4 <= 5) {
+				contadorVehiculos = contadorVehiculos + 1;
+			}
+			
+			System.out.println("Cantidad de vehiculos de antiguedad menor a 5 anos: " + contadorVehiculos);
+			boolean vehiculos = contadorVehiculos >= 3;
+
+			// Tipificación final del tipo de ingresos;
+			if (( ingresos >= 489083) || (vehiculos) || (cantInmuebles >= 3) || (embarcacion) || (aeronave) || (activoSocietario))  {
+				System.out.println("Pertenece al sector de ALTOS INGRESOS");
+			}
+			else {
+				System.out.println("NO pertenece al sector de altos ingresos.....");
+			}
+			}
+}
+
+
+************************************************************************* Output Eclipse
+
+Cantidad de vehiculos de antiguedad menor a 5 anos: 3
+Pertenece al sector de ALTOS INGRESOS

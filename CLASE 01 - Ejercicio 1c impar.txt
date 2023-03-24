@@ -1,0 +1,64 @@
+CLASE 01 - 24/2/2023         Ejercicio 1 - c
+************************************************************************* input Eclipse
+
+
+package Ejercicios;
+
+public class clase1 {
+
+	public static void main(String[] args) {
+	
+		// Resolución de Ejercicio - Clase: 01, Ítem 1c - (impar);
+		
+		int valorInicio = 5;
+		int valorFin = 14;
+		int valorActual = valorInicio;
+		boolean valorDiv2 = false;
+		
+		System.out.println("Son divisibles por dos ?  ----->  "  +  valorDiv2);
+		
+		// Si el valor de valorDiv2 es verdadero (par)
+		//
+		
+		if (valorDiv2) {
+		
+		while (valorActual <= valorFin) {
+			int resto = valorActual % 2;
+			boolean valorPar = resto == 0;
+			
+			if (valorPar) {
+			System.out.println(valorActual);
+		
+		}
+			valorActual = valorActual + 1;
+	}
+}
+		
+		// Si el valor de valorDiv2 es false (impar)
+		//
+		
+		while (valorActual <= valorFin) {
+			int resto = valorActual % 2;
+			boolean valorPar = resto != 0;
+			
+			if (valorPar) {
+			System.out.println(valorActual);
+		
+		}
+			valorActual = valorActual + 1;
+	}
+	
+	}	
+}
+
+
+
+************************************************************************* Output Eclipse
+
+Son divisibles por dos ?  ----->  false
+5
+7
+9
+11
+13
+
