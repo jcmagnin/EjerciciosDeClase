@@ -1,0 +1,35 @@
+CLASE 01 - 24/2/2023         Ejercicio 1 - a
+************************************************************************* input Eclipse
+
+
+package Ejercicios;
+
+public class clase1 {
+
+	public static void main(String[] args) {
+	
+		// Resolución de Ejercicio - Clase: 01, Ítem 1a;
+		
+		int numeroInicio = 5;
+		int numeroFin = 14;
+		
+		while (numeroInicio <= numeroFin) {
+			System.out.println(numeroInicio);
+			numeroInicio = numeroInicio + 1;
+						
+		}
+	}
+}
+
+************************************************************************* Output Eclipse
+
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
